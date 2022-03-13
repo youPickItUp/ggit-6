@@ -3,6 +3,10 @@ h1 {
   margin: 0;
 }
 
+body {
+  background-color: #f5eefe;
+}
+
 nav {
   background-color: #dcd7f7;
   padding: 10px;
