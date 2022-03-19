@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Dobre książki</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="site-bootstrap.css" rel="stylesheet">
+</head>
+
+<body class="h-100 d-flex flex-column bg-dark text-light">
+    <nav class=" navbar navbar-expand-lg navbar-dark mb-5">
+        <div class="container">
+            <a href="index.html" class="text-decoration-none">
+                <h1 class="me-3 mb-0 text-white">Dobre książki</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbarSupportedContent">
+                <form class="d-flex me-auto">
+                    <input class="form-control me-2" name="searchPhrase" type="text" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Szukaj</button>
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="site-bootstrap.html">Mój profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="zaloguj.html">Zaloguj</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container px-0">
+        <section class="d-flex flex-column align-items-center">
+            <img class="rounded-circle my-image" alt="avatar" width="300" src="panorama.jpg">
+            <strong class="fs-1">Wojciech Basiura</strong>
+            <p>
+                Konto aktywne od 06.03.2022r.
+            </p>
+        </section>
+        <section class="bg-light">
+            <ul class="d-flex justify-content-center nav nav-tabs bg-dark" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active px-2 px-sm-4 py-1 py-sm-2" id="home-tab" data-bs-toggle="tab"
+                        data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                        aria-selected="true">Recenzje</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link px-2 px-sm-4  py-1 py-sm-2" id="profile-tab" data-bs-toggle="tab"
+                        data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                        aria-selected="false">Polecane</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link px-2  px-sm-4 py-1 py-sm-2" id="contact-tab" data-bs-toggle="tab"
+                        data-bs-target="#contact" type="button" role="tab" aria-controls="contact"
+                        aria-selected="false">Ulubione</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link px-2  px-sm-4 py-1 py-sm-2" id="black-list-tab" data-bs-toggle="tab"
+                        data-bs-target="#black-list" type="button" role="tab" aria-controls="black-list"
+                        aria-selected="false">Czarna lista</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="container p-5">
+                        <div class="row justify-content-center row-cols-auto g-5">
+                            <div class="col">
+                                <div class="card bg-dark text-light" style="width: 18rem;">
+                                    <img src="imgs/istockphoto-1281804798-170667a.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk
+                                            of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card bg-dark text-light" style="width: 18rem;">
+                                    <img src="imgs/istockphoto-1281804798-170667a.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk
+                                            of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card bg-dark text-light" style="width: 18rem;">
+                                    <img src="imgs/istockphoto-1281804798-170667a.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk
+                                            of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="container p-5">
+                        <div class="row justify-content-center row-cols-auto g-5">
+                            <div class="col">
+                                <div class="card bg-dark text-light" style="width: 18rem;">
+                                    <img src="alas-Cat.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk
+                                            of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card bg-dark text-light" style="width: 18rem;">
+                                    <img src="alas-Cat.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk
+                                            of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card bg-dark text-light" style="width: 18rem;">
+                                    <img src="alas-Cat.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk
+                                            of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="container p-5">
+                        <div class="row justify-content-center row-cols-auto g-5">
+                            <div class="col">
+                                <div class="card bg-dark text-light" style="width: 18rem;">
+                                    <img src="imgs/istockphoto-1281804798-170667a.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk
+                                            of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card bg-dark text-light" style="width: 18rem;">
+                                    <img src="imgs/istockphoto-1281804798-170667a.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk
+                                            of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card bg-dark text-light" style="width: 18rem;">
+                                    <img src="imgs/istockphoto-1281804798-170667a.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk
+                                            of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="black-list" role="tabpanel" aria-labelledby="black-list-tab">
+                    <div class="container p-5">
+                        <div class="row justify-content-center row-cols-auto g-5">
+                            <div class="col">
+                                <div class="card bg-dark text-light" style="width: 18rem;">
+                                    <img src="imgs/istockphoto-1281804798-170667a.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk
+                                            of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card bg-dark text-light" style="width: 18rem;">
+                                    <img src="imgs/istockphoto-1281804798-170667a.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk
+                                            of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card bg-dark text-light" style="width: 18rem;">
+                                    <img src="imgs/istockphoto-1281804798-170667a.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk
+                                            of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="p-3 text-light text-center mt-auto">
+        All rights reserved © 2022
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
